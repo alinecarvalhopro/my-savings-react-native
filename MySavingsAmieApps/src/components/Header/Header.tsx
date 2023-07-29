@@ -24,7 +24,7 @@ const Header = () => {
         >
           <Text
           style={{marginRight: 16, fontSize: 16}}
-          >{currentSecure ? `Balance $ **` : <>{`Balance $ ${"100"}`}</>}</Text>
+          >{currentSecure ? `Balance $ **` : <>{`Balance $ ${"100.00"}`}</>}</Text>
           <MyIcon
             name={currentSecure ? 'eye' : 'eye-blocked'}
             size={22}

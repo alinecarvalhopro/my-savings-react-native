@@ -2,25 +2,11 @@ import React, {useState} from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import MyInput from '../../fragments/MyInput/MyInput';
 import SelectDropdown from 'react-native-select-dropdown';
+import { useSavingsContext } from '../../provider/SavingsContext';
 
 const FormAddUpdate = () => {
-  const [description, setDescription] = useState('');
-  const [money, setMoney] = useState('');
-  const [updates, setUpdates] = useState([]);
-  const [updateType, setUpdateType] = useState('');
-  const updateTypes = ['Expense', 'Gain'];
 
-  const submit = () => {
-    const data = {
-      description,
-      money,
-      updateType,
-    };
-    setUpdates([...updates, data]);
-    setDescription('');
-    setMoney('');
-    setUpdateType('');
-  };
+  const {description, setDescription, money, setMoney, updateTypes, setUpdateType, submit } = useSavingsContext()
 
   return (
     <View style={styles.fomrContainer}>
