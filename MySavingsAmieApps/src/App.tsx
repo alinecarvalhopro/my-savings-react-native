@@ -1,16 +1,21 @@
-import React, {useState} from 'react';
-import {SafeAreaView, StyleSheet, Text} from 'react-native';
+import React from 'react';
+import {SafeAreaView, StyleSheet} from 'react-native';
 import FormAddUpdate from './components/FormAddUpdate/FormAddUpdate';
+import Header from './components/Header/Header';
 
 const App = () => {
   return (
-    <SafeAreaView>
-      <Text>My Savings</Text>
-      <FormAddUpdate/>
+    <SafeAreaView style={styles.appContainer}>
+      <Header />
+      <FormAddUpdate />
     </SafeAreaView>
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  appContainer: {
+    backgroundColor: '#fbfbfb'
+  },
+});
 
 export default App;
