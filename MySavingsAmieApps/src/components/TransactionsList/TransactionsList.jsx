@@ -10,9 +10,10 @@ const TransactionsList = () => {
         <>
           <Text
             style={{
-              fontSize: 20,
               marginHorizontal: 16,
               marginTop: 20,
+              fontSize: 20,
+              color: '#000000'
             }}>
             Sumary
           </Text>
@@ -61,7 +62,7 @@ const TransactionsList = () => {
                     <Text style={styles.descriptionText}>
                       {item.description.substring(0, 20)}
                     </Text>
-                    <Text>{item.date.toLocaleDateString('en-EUA')}</Text>
+                    <Text style={{color: '#000000'}}>{item.date.toLocaleDateString('en-EUA')}</Text>
                   </View>
                   <View
                     style={{
@@ -69,12 +70,12 @@ const TransactionsList = () => {
                       justifyContent: 'space-between',
                     }}>
                     <View style={{flexDirection: 'row'}}>
-                      <MyIcon name="coin-dollar" size={20} color='#000000' />
+                      <MyIcon name="coin-dollar" size={20} color="#000000" />
                       <Text style={styles.moneyText}>
                         {item.money.toFixed(2)}
                       </Text>
                     </View>
-                    <Text>{item.updateType}</Text>
+                    <Text style={{color: '#000000', fontSize: 14}}>{item.updateType}</Text>
                   </View>
                 </View>
                 <MyIcon
@@ -90,10 +91,11 @@ const TransactionsList = () => {
       ) : (
         <Text
           style={{
-            fontSize: 20,
             marginHorizontal: 16,
             marginTop: 20,
             marginBottom: 10,
+            fontSize: 20,
+            color: '#000000',
           }}>
           There are no registered transactions
         </Text>

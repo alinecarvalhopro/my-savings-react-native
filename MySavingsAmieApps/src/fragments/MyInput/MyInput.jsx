@@ -22,11 +22,12 @@ const styles = StyleSheet.create({
   },
   label: {
     marginBottom: 5,
-    color: '#545454',
+    fontSize: 15,
+    color: '#000000',
   },
   textInput: {
     height: 56,
-    borderColor: '#545454',
+    borderColor: '#000000',
     borderWidth: 1,
     borderRadius: 5,
     paddingLeft: 10,

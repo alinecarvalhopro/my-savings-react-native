@@ -33,9 +33,9 @@ const Header = () => {
             justifyContent: 'space-between',
             alignItems: 'center',
           }}>
-          <Text style={{fontSize: 20}}>My Savings</Text>
+          <Text style={{fontSize: 20, fontWeight: '400', color: '#000000'}}>My Savings</Text>
           <View style={{flexDirection: 'row'}}>
-            <Text style={{marginRight: 16, fontSize: 16}}>
+            <Text style={{marginRight: 16, fontSize: 16, color: '#000000'}}>
               {currentSecure ? (
                 `Balance $ **`
               ) : (
@@ -45,6 +45,7 @@ const Header = () => {
             <MyIcon
               name={currentSecure ? 'eye' : 'eye-blocked'}
               size={22}
+              color='#000000'
               onPress={handleOnPressEye}
             />
           </View>

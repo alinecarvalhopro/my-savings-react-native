@@ -19,9 +19,10 @@ const FormAddUpdate = () => {
     <>
       <Text
         style={{
-          fontSize: 20,
           marginHorizontal: 16,
           marginBottom: 10,
+          fontSize: 20,
+          color: '#000000',
         }}>
         Add a transaction
       </Text>
@@ -42,7 +43,8 @@ const FormAddUpdate = () => {
           <Text
             style={{
               marginBottom: 5,
-              color: '#545454',
+              fontSize: 15,
+              color: '#000000',
             }}>
             Transaction type
           </Text>
@@ -83,6 +85,7 @@ const styles = StyleSheet.create({
   },
   textButton: {
     fontSize: 18,
-    fontWeight: 'bold',
+    fontWeight: '500',
+    color: '#000000',
   },
 });
