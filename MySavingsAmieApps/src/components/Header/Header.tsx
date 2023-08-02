@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
   frontHeader: {
     height: 70,
     borderRadius: 5,
-    borderWidth: 1,
+    borderWidth: 2,
     borderColor: '#e6d264',
     marginTop: 30,
     marginHorizontal: 16,
