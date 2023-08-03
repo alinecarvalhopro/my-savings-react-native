@@ -16,7 +16,7 @@ const TransactionsList = () => {
     <>
       {updates.length > 0 ? (
         <>
-          <Text style={styles.titleModal}>Sumary</Text>
+          <Text style={styles.titleModal}>Summary</Text>
           <FlatList
             style={{
               paddingBottom: 16,
