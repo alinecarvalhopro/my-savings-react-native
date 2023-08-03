@@ -26,7 +26,7 @@ interface ITransaction {
   date: Date;
 }
 
-const SavingContext = createContext({} as ISanvingsContext);
+export const SavingContext = createContext({} as ISanvingsContext);
 
 export const SavingsProvider = ({children}: ISanvingsProviderProps) => {
   const [description, setDescription] = useState('');

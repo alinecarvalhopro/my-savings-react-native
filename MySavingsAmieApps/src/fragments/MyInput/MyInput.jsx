@@ -22,7 +22,8 @@ const styles = StyleSheet.create({
   },
   label: {
     marginBottom: 5,
-    fontSize: 15,
+    fontFamily: 'Nunito-SemiBold', 
+    fontSize: 18,
     color: '#000000',
   },
   textInput: {

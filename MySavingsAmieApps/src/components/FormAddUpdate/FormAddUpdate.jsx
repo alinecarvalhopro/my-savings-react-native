@@ -18,13 +18,8 @@ const FormAddUpdate = () => {
   return (
     <>
       <Text
-        style={{
-          marginHorizontal: 16,
-          marginBottom: 10,
-          fontSize: 20,
-          color: '#000000',
-        }}>
-        Add a transaction
+        style={styles.titleSection}>
+        Register our finances
       </Text>
       <View style={styles.fomrContainer}>
         <MyInput
@@ -37,15 +32,11 @@ const FormAddUpdate = () => {
           label="Value $"
           onChangeText={setMoney}
           value={money}
-          placeholder=" Ex: 125.00"
+          placeholder=" Ex: 125.00 or 125"
         />
         <View>
           <Text
-            style={{
-              marginBottom: 5,
-              fontSize: 15,
-              color: '#000000',
-            }}>
+            style={styles.labelTypeTransaction}>
             Transaction type
           </Text>
         </View>
@@ -66,26 +57,39 @@ const FormAddUpdate = () => {
 export default FormAddUpdate;
 
 const styles = StyleSheet.create({
+  titleSection: {
+    marginHorizontal: 16,
+    marginBottom: 10,
+    fontFamily: 'Nunito-SemiBold', 
+    fontSize: 22,
+    color: '#000',
+  },
   fomrContainer: {
     marginHorizontal: 16,
     padding: 16,
     borderColor: '#e6d264',
     borderWidth: 2,
     borderRadius: 5,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#FFF',
+  },
+  labelTypeTransaction: {
+    marginBottom: 5,
+    fontFamily: 'Nunito-SemiBold', 
+    fontSize: 18,
+    color: '#000',
   },
   button: {
     height: 56,
     marginTop: 10,
     borderRadius: 5,
-    backgroundColor: '#e6d264',
+    backgroundColor: '#848484',
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
   },
   textButton: {
-    fontSize: 18,
-    fontWeight: '500',
-    color: '#000000',
+    fontFamily: 'Nunito-SemiBold', 
+    fontSize: 20,
+    color: '#FFF'
   },
 });

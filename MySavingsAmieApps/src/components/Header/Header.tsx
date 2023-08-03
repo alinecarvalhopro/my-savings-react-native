@@ -22,30 +22,27 @@ const Header = () => {
     <View style={styles.header}>
       <View style={styles.frontHeader}>
         <Image
-          style={{width: 50, height: 50, marginLeft: 10, marginRight: 10}}
+          style={styles.logo}
           source={require('../../../assets/logo.png')}
         />
         <View
-          style={{
-            flex: 1,
-            marginRight: 10,
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-          }}>
-          <Text style={{fontSize: 20, fontWeight: '400', color: '#000000'}}>My Savings</Text>
+          style={styles.containerTitleAndBalance}>
+          <Text
+            style={styles.title}>
+            My Savings
+          </Text>
           <View style={{flexDirection: 'row'}}>
-            <Text style={{marginRight: 16, fontSize: 16, color: '#000000'}}>
+            <Text style={styles.balance}>
               {currentSecure ? (
                 `Balance $ **`
               ) : (
-                <>{`Balance $ ${totalValue.toFixed(2)}`}</>
+                <>{`$ ${totalValue.toFixed(2)}`}</>
               )}
             </Text>
             <MyIcon
               name={currentSecure ? 'eye' : 'eye-blocked'}
               size={22}
-              color='#000000'
+              color="#000"
               onPress={handleOnPressEye}
             />
           </View>
@@ -73,6 +70,20 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
+  logo: {width: 50, height: 50, marginLeft: 10, marginRight: 10},
+  containerTitleAndBalance: {
+    flex: 1,
+    marginRight: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  title: {
+    fontFamily: 'Borel-Regular',
+    fontSize: 22,
+    color: '#848484',
+  },
+  balance: {marginRight: 10, fontFamily: 'Nunito-SemiBold', fontSize: 16, color: '#000'}
 });
 
 export default Header;
