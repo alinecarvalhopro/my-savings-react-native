@@ -1,6 +1,13 @@
 import {StyleSheet, Text, TextInput, View} from 'react-native';
 
-const MyInput = ({label, value, placeholder, onChangeText}) => {
+interface IMyInputProps {
+  label: string,
+  value: string,
+  placeholder: string,
+  onChangeText: React.Dispatch<React.SetStateAction<string>>
+}
+
+const MyInput = ({label, value, placeholder, onChangeText}: IMyInputProps) => {
   return (
     <View style={styles.inputContainer}>
       <Text style={styles.label}>{label}</Text>
