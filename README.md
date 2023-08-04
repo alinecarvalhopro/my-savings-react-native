@@ -9,6 +9,7 @@ Também desenvolvi o protótipo dele, segue o link:
 
 Tecnologias utilizadas:
 - React Native
+- TypeScript
 - Figma
 
 - Visual Studio Code (desenvolvimento)
