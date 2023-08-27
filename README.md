@@ -1,4 +1,4 @@
-## my-savings-react-native💲
+## my-savings-react-native 💰
 
 Esse é um projeto pessoal, de um Aplicativo de fincanças desenvolvido em React Native, onde é possível cadastrar ganhos e despesas, bem bomo excluir cada um.
 
