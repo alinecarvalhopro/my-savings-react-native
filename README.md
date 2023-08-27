@@ -18,5 +18,4 @@ Tecnologias utilizadas:
 ### Segue o link do vídeo que postei no meu LinkedIn, onde apresento com mais detalhes as funcionalidades:
 - https://www.linkedin.com/feed/update/urn:li:activity:7094301265337147392/ <br/>
 
-![my-sanvings](https://github.com/alinecarvalhopro/my-savings-react-native/assets/118927052/463b4b8c-9912-48df-9370-683a3047b584)
-![summary](https://github.com/alinecarvalhopro/my-savings-react-native/assets/118927052/e8a0c1bd-5072-4e52-b1e3-c913e904eb67)
+![Captura de tela 2023-08-26 223545](https://github.com/alinecarvalhopro/my-savings-react-native/assets/118927052/ee346647-8fc4-4b56-a105-7268325d27db)
